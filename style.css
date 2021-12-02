@@ -3,9 +3,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
 #subject, #context, #sub_homework, #con_homework{    
-	border-radius: 15px 50px 30px;
-    border: 2px solid #609;
+	border-radius: 50px 50px 50px 50px;
+    border: 2px solid;
     padding: 20px; 
     width: 200px;
-    height: 15px; ;
+    height: 25px; ;
 }
