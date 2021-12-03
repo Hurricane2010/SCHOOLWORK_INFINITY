@@ -39,7 +39,37 @@
   <form action = "/action_page.php">
     <label for="subject_text" style="color: white;"><h3 class = "w3-margin">Enter the Subject of the Project: </h3></label>
     <input type="text" id="subject" name="subject">
-    <input type="submit" value="Submit"></form></div>
+    <input type="submit" value="Submit" id="subjectButton">
+  </form>
+  <h5 class = "w3-margin" id = "outputText"></h5>
+    <script>
+      var output = ""
+      var contextoutput = ""
+      var history = "Slideshow or Poster (with oral presentation)"
+      var science = "Essay or Slideshow (with oral presentation and provided research)"
+      var math = "Poster or Oral Presentation"
+      var design = "Image Slideshow or Model"
+      var art = "Artpeice and Discription, or Model and supporting text"
+      var className = document.getElementById('subject').value
+      if(className == "history"){
+        output = history
+      }
+      if(className == "science"){
+        output = science
+      }
+      if(classname == "math"){
+        output = math
+      }
+      if(className == "design"){
+        output = design
+      }
+      if(className == "art"){
+        output = art
+      }
+      document.getElementById("outputText").innerHTML = output;
+    </script>
+    <h5 class = "w3-margin w3-left-align"><span id="outputText"></span></h5>
+  </div>
 
 <div class = "w3-container w3-center" style = "background-color: #5DADE2; padding: 128px 16px">
   <form action = "/action_page.php">
