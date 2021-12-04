@@ -10,7 +10,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     text-align: center;
 }
 
-#subjectButton, #contextButton, #contextHomeworkButton, #subjectHomeworkButton{
+#subjectProjectButton, #contextProjectButton, #contextHWButton, #subjectHWButton{
 	border-radius: 50px 50px 50px 50px;
 	border: 2px solid #E5E7E9;
     padding: 5px; 
