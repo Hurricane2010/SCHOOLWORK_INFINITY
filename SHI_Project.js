@@ -8,18 +8,18 @@ var design = "Image Slideshow or Model"
 var art = "Artpeice and Discription, or Model and supporting text"
 var className = document.getElementById('subjectButton').value
 if(className == "history"){
-output = history
+    output = history
 }
 if(className == "science"){
-output = science
+    output = science
 }
-if(classname == "math"){
-output = math
+if(className == "math"){
+    output = math
 }
 if(className == "design"){
-output = design
+    output = design
 }
 if(className == "art"){
-output = art
+    output = art
 }
 document.getElementById("outputText").innerHTML = output;
