@@ -7,9 +7,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     border: 2px solid #E5E7E9;
     padding: 20px; 
     width: 200px;
+    text-align: center;
 }
 
-#subjectButton, #context, #con_homework_button, #sub_homework_button{
+#subjectButton, #contextButton, #contextHomeworkButton, #subjectHomeworkButton{
 	border-radius: 50px 50px 50px 50px;
 	border: 2px solid #E5E7E9;
     padding: 5px; 
