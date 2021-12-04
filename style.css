@@ -10,15 +10,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     text-align: center;
 }
 
-.button {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
+.submitButton {
+    background-color: white;
   }
