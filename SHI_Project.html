@@ -38,9 +38,9 @@
 <div class = "w3-container w3-center" style = "padding: 128px 16px; background-color: #7FB3D5;">
   <form action = "/action_page.php">
     <label for="subject_text" style="color: white;"><h3 class = "w3-margin">Enter the Subject of the Project: </h3></label>
-    <input type="text" id="subject" name="subject"> 
+    <input type="text" id="subject" name="subject"> <!--text box-->
     <br></br>
-    <input type="submit" value="Submit" class="submitButton"/>
+    <input type="submit" value="Submit" onclick="onSubjectSubmit()" class="submitButton"/> <!--sumbit subject of project button-->
   </form>
   <h5 class = "w3-margin" id = "outputText"></h5>
   <h5 class = "w3-margin w3-left-align"><span id="outputText"></span></h5>
