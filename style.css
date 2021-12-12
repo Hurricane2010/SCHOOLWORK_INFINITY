@@ -11,9 +11,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 }
 
 .submitButton {
-    background-color:cornsilk;
+    background-color:#a1b2d6de;
 	border-radius: 50px 50px 50px 50px;
     padding: 20px;
-    width: 200px;
+    width: 100;
     text-align: center;
   }
