@@ -8,21 +8,5 @@ var art = "Artpeice and Discription, or Model and supporting text"
 function onSubjectSubmit() {
     event.preventDefault();
     var subjectSubmitText = document.getElementById("subject").value; 
-    //alert("Text input: " + subjectSubmitText)
-    if(subjectSubmitText.toLowerCase() = "history"){
-        output = history;
-    }
-    if(subjectSubmitText.toLowerCase() = "science"){
-        output = science;
-    }
-    if(subjectSubmitText.toLowerCase() = "math"){
-        output = math;
-    }
-    if(subjectSubmitText.toLowerCase() = "design"){
-        output = design;
-    }
-    if(subjectSubmitText.toLowerCase() = "art"){
-        output = art;
-    }
-    document.getElementById('mediumResult').innerHTML = output;
+    alert("Text input: " + subjectSubmitText)
 }
