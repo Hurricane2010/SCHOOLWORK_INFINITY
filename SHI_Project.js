@@ -9,19 +9,35 @@ function onSubjectSubmit() {
     event.preventDefault();
     var subjectSubmitText = document.getElementById("subject").value; 
     //alert("Text input: " + subjectSubmitText)
-    if(subjectSubmitText == "history"){
-        document.getElementById("outputText").innerHTML = socStu;
-    }
-    if(subjectSubmitText == "science"){
-        document.getElementById("outputText").innerHTML = science;
-    }
-    if(subjectSubmitText == "math"){
-        document.getElementById("outputText").innerHTML = math;
-    }
-    if(subjectSubmitText == "design"){
-        document.getElementById("outputText").innerHTML = design;
-    }
-    if(subjectSubmitText == "art"){
-        document.getElementById("outputText").innerHTML = art;
+    // if(subjectSubmitText == "history"){
+    //     document.getElementById("outputText").innerHTML = socStu;
+    // }
+    // if(subjectSubmitText == "science"){
+    //     document.getElementById("outputText").innerHTML = science;
+    // }
+    // if(subjectSubmitText == "math"){
+    //     document.getElementById("outputText").innerHTML = math;
+    // }
+    // if(subjectSubmitText == "design"){
+    //     document.getElementById("outputText").innerHTML = design;
+    // }
+    // if(subjectSubmitText == "art"){
+    //     document.getElementById("outputText").innerHTML = art;
+    // }
+
+    switch(subjectSubmitText.toLowerCase()){
+        case "history":
+            document.getElementById("outputText").innerHTML = socStu;
+        case "science":
+            document.getElementById("outputText").innerHTML = science;
+        case "math":
+            document.getElementById("outputText").innerHTML = math;
+        case "design":
+            document.getElementById("outputText").innerHTML = design;
+        case "art":
+            document.getElementById("outputText").innerHTML = art;
+
+
+
     }
 }
