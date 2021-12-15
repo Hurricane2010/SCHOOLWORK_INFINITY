@@ -25,6 +25,9 @@ function onSubjectSubmit() {
         case "art":
             document.getElementById("outputText").innerHTML = art;
             break;
+        default:
+            document.getElementById("outputText").innerHTML = "YOU MESSED UP< LOL >";
+
     }
     //alert("Text input: " + subjectSubmitText)
     // if(subjectSubmitText == "history"){
