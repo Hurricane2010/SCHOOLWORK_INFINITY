@@ -1,5 +1,3 @@
-var output = "";
-var contextoutput = "";
 var socStu = "Slideshow or Poster (with oral presentation)";
 var science = "Essay or Slideshow (with oral presentation and provided research)";
 var math = "Poster or Oral Presentation";
@@ -29,20 +27,19 @@ function onSubjectSubmit() {
             document.getElementById("outputText").innerHTML = "YOU MESSED UP< LOL >";
 
     }
-    //alert("Text input: " + subjectSubmitText)
-    // if(subjectSubmitText == "history"){
-    //     document.getElementById("outputText").innerHTML = socStu;
-    // }
-    // if(subjectSubmitText == "science"){
-    //     document.getElementById("outputText").innerHTML = science;
-    // }
-    // if(subjectSubmitText == "math"){
-    //     document.getElementById("outputText").innerHTML = math;
-    // }
-    // if(subjectSubmitText == "design"){
-    //     document.getElementById("outputText").innerHTML = design;
-    // }
-    // if(subjectSubmitText == "art"){
-    //     document.getElementById("outputText").innerHTML = art;
-    // }
+
+}
+
+function onContextSubmit(){
+    var contextSubmitText = document.getElementById("context").value;
+    const google = require("google");
+    message.channel.send("<a:googling:426453223310622740> Loading...").then(msg => {
+        google(lookup, (err, res) => {
+          if (err) console.error(err);
+          else {
+            let url = res.links[res.start].link; //you can also use .href instead of .link
+            msg.edit(url);
+          }
+        });
+      });
 }
