@@ -33,13 +33,5 @@ function onSubjectSubmit() {
 function onContextSubmit(){
     var contextSubmitText = document.getElementById("context").value;
     const google = require("google");
-    message.channel.send("<a:googling:426453223310622740> Loading...").then(msg => {
-        google(lookup, (err, res) => {
-          if (err) console.error(err);
-          else {
-            let url = res.links[res.start].link; //you can also use .href instead of .link
-            msg.edit(url);
-          }
-        });
-      });
+    alert("contextSubmitText")
 }
