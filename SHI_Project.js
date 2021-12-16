@@ -31,6 +31,7 @@ function onSubjectSubmit() {
 }
 
 function onContextSubmit(){
+    event.preventDefault();
     var contextSubmitText = document.getElementById("context").value;
     const google = require("google");
     alert("contextSubmitText")
