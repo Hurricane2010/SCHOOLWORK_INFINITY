@@ -52,13 +52,14 @@
 <div class = "w3-container w3-center" style = "background-color: #5DADE2; padding: 128px 16px">
   <form action = "/action_page.php">
     <label for="context_text" style="color: white;"><h3 class = "w3-margin" >Enter the context of the Project: </h3></label>
-    <input type="text" id="context" name="context"> 
+    <span class="input" role="textbox" contenteditable="true"><input type="text" id="context" name="context"></span>
     <br></br>
     <label style="color: white;"><h5 class = "w3-margin" id="outputText" style="color: white;"></h5></label>
     <br></br>
     <input type="submit" value="Submit" onclick="onContextSubmit()" class="submitButton"/>
   </form>
 </div>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-dark-grey" style = "padding: 128px 16px">  
