@@ -24,7 +24,7 @@ function onSubjectSubmit() {
             document.getElementById("outputText").innerHTML = art;
             break;
         default:
-            document.getElementById("outputText").innerHTML = "YOU MESSED UP< LOL >";
+            document.getElementById("outputText").innerHTML = "TRY AGAIN LOL";
 
     }
 
