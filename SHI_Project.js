@@ -7,5 +7,5 @@ function onSubjectSubmit() {
     event.preventDefault();
     var subjectSubmitText = document.getElementById("subject").value;
     alert(subjectSubmitText);
-    
 }
+
