@@ -17,3 +17,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     width: 100;
     text-align: center;
   }
+
+
+button{
+    position: absolute;
+    top: 10px;
+    left: 1375px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 0 15px #303030;
+    background: #fff;
+    cursor: pointer;
+    font: 1.2em 'consolas';
+    transition: transform 300ms ease;
+    z-index: 2;
+}
+
+button:active{
+    transform: scale(0.95);
+}
