@@ -7,31 +7,4 @@ function onSubjectSubmit() {
     event.preventDefault();
     var subjectSubmitText = document.getElementById("subject").value; 
 
-    switch(subjectSubmitText.toLowerCase()){
-        case "history":
-            document.getElementById("outputText").innerHTML = socStu;
-            break;
-        case "science":
-            document.getElementById("outputText").innerHTML = science;
-            break;
-        case "math":
-            document.getElementById("outputText").innerHTML = math;
-            break;
-        case "design":
-            document.getElementById("outputText").innerHTML = design;
-            break;
-        case "art":
-            document.getElementById("outputText").innerHTML = art;
-            break;
-        default:
-            document.getElementById("outputText").innerHTML = "TRY AGAIN LOL";
-
-    }
-
-}
-
-function onContextSubmit(){
-    event.preventDefault();
-    var contextSubmitText = document.getElementById("context").value;
-    alert("contextSubmitText")
 }
