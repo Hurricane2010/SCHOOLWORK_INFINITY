@@ -5,7 +5,7 @@ var design = "Image Slideshow or Model";
 var art = "Artpeice and Discription, or Model and supporting text";
 function onSubjectSubmit() {
     event.preventDefault();
-    var subjectSubmitText = document.getElementById("subject").value;
+    var subjectSubmitText = document.getElementById("subject_project").value;
     alert(subjectSubmitText);
 }
 
