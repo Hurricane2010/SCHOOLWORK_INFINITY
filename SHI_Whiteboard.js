@@ -19,8 +19,9 @@ function resize(){
 }
 
 function draw(e){
-    if(e.buttons !== 1)
+    if(e.buttons !== 1){
         return;
+    }
     ctx.beginPath();
     ctx.lineCap = 'round';
     ctx.strokeStyle = '#111';
