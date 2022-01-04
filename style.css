@@ -2,7 +2,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
-#subject, #sub_homework{    
+#subject_hw, #subject_project{    
 	border-radius: 50px 50px 50px 50px;
     border: 2px solid #E5E7E9;
     padding: 20px; 
@@ -19,7 +19,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   }
 
 
-button{
+.whiteboardButton{
     position: absolute;
     top: 10px;
     left: 1325px;
