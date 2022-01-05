@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     const canvas = document.querySelector('#canvas');
     const ctx = canvas.getContext('2d');
-    const lineWidth = 3
+    width = 3
 
     //Resizing
     canvas.height = window.innerHeight;
@@ -21,14 +21,13 @@ window.addEventListener("load", () => {
 
     function draw(e){
         if(!painting) return;
-        ctx.lineWidth = lineWidth;
+        ctx.lineWidth = width;
         ctx.lineCap = 'round'
 
         ctx.lineTo(e.clientX, e.clientY);
         ctx.stroke();
         ctx.beginPath();
         ctx.moveTo(e.clientX, e.clientY);
-
     }
 
     //EventListeners
@@ -37,16 +36,6 @@ window.addEventListener("load", () => {
     canvas.addEventListener("mousemove", draw);
 
 
-    //Button Functions
-    function lineWidthIncreaese(){
-        event.preventDefault();
-        lineWidth = lineWidth + 1;
-    }
-    
-    function lineWidthDecrease(){
-        event.preventDefault();
-        lineWidth = lineWidth - 1;
-    }
 });
 
 
@@ -54,5 +43,30 @@ window.addEventListener('resize', () =>{
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
 });
+
+    //Button Functions
+function lineWidthIncreaese(e){
+    console.log("Line is decreasing!")
+    var canvas = document.getElementById('canvas'),
+        ctx = canvas.getContext("2d");
+    width = width + 1;
+    draw(e)
+    }
+    
+function lineWidthDecrease(e){
+    console.log("Line is decreasing!")
+    var canvas = document.getElementById('canvas'),
+        ctx = canvas.getContext("2d");
+    width = width - 1;
+    draw(e)
+}
+
+function clearall(){
+    var canvas = document.getElementById('canvas'),
+        ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+
 
 
