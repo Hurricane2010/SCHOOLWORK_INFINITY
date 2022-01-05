@@ -18,22 +18,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     text-align: center;
   }
 
+#canvas{
+    border: 2px solid black;
+    
+}
 
-.whiteboardButton{
-    position: absolute;
-    top: 10px;
-    left: 1325px;
-    padding: 10px 40px;
-    border: none;
+.functionalButton{
+    margin-top: 300px;
     border-radius: 50px 50px 50px 50px;
-    box-shadow: 0 0 15px #303030;
-    background: #fff;
+    border: 2px solid #E5E7E9;
+    color: rgb(79, 82, 82);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
     cursor: pointer;
-    font: 1.2em 'consolas';
-    transition: transform 300ms ease;
-    z-index: 2;
-}
+    position: absolute;
+    background-color: rgb(143, 141, 140);
 
-button:active{
-    transform: scale(0.95);
-}
+  }
