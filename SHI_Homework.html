@@ -38,6 +38,46 @@
   <h1 class="w3-margin w3-jumbo"  style="color: white">Homework</h1>
 </header>
 
+<button type="submit" onclick="calculator()" class="submitButton" style="position: sticky;">Calculator</button>
+
+<div class = "title">
+  <table border="1">
+     <tr>
+        <td colspan="3"><input type="text" id="result"/></td>
+        <!-- clr() function will call clr to clear all value -->
+        <td><input type="button" value="c" onclick="clr()"/> </td>
+     </tr>
+     <tr>
+        <!-- create button and assign value to each button -->
+        <!-- dis("1") will call function dis to display value -->
+        <td><input type="button" value="1" onclick="dis('1')"/> </td>
+        <td><input type="button" value="2" onclick="dis('2')"/> </td>
+        <td><input type="button" value="3" onclick="dis('3')"/> </td>
+        <td><input type="button" value="/" onclick="dis('/')"/> </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="4" onclick="dis('4')"/> </td>
+        <td><input type="button" value="5" onclick="dis('5')"/> </td>
+        <td><input type="button" value="6" onclick="dis('6')"/> </td>
+        <td><input type="button" value="-" onclick="dis('-')"/> </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="7" onclick="dis('7')"/> </td>
+        <td><input type="button" value="8" onclick="dis('8')"/> </td>
+        <td><input type="button" value="9" onclick="dis('9')"/> </td>
+        <td><input type="button" value="+" onclick="dis('+')"/> </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="." onclick="dis('.')"/> </td>
+        <td><input type="button" value="0" onclick="dis('0')"/> </td>
+        <!-- solve function call function solve to evaluate value -->
+        <td><input type="button" value="=" onclick="solve()"/> </td>
+        <td><input type="button" value="*" onclick="dis('*')"/> </td>
+     </tr>
+  </table>
+</div>
+
+
 <div class = "w3-container w3-center" style = "padding: 128px 16px; background-color: #5D6D7E">
   <h3 class = "w3-margin w3-center-align" style="color: white">Enter the Subject of the Homework: </h3>
   <form action = "/action_page.php">
@@ -52,6 +92,9 @@
     <script async src="https://cse.google.com/cse.js?cx=85643242ed2fc41a6"></script>
     <div class="gcse-search" id = "search"></div>
 </div>
+
+
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey" style = "padding: 128px 16px">  

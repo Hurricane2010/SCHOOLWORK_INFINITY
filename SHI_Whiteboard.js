@@ -83,6 +83,39 @@ function pen(){
     width = width;
 }
 
+// function selector(){
+//     var canvas = document.getElementById('canvas'),
+//         ctx = canvas.getContext("2d");
+//     const image = {
+//             image: new Image(),
+//             x: canvas.width / 2 - image.width / 2, // centered in canvas
+//             y: canvas.height / 2 - image.height / 2 // centered in canvas
+//         };
+        
+//     image.image.src = ' <url> ';
+//     const canvas = new Canvas('my-canvas', 500, 500).start();
+
+//     canvas.on('draw', function ( renderer ) {
+//         renderer.drawImage(image.image, image.x, image.y);
+//     });
+//     const pointer = new Pointer( canvas.element );
+
+//     let moveImage = false;
+
+//     pointer.on('move', function ( event ) {
+//         if( moveImage ) {
+//             image.x += (event.x - pointer.getMoveHistory(-2).x);
+//             image.y += (event.y - pointer.getMoveHistory(-2).y);
+//         }
+//     });
+//     pointer.on('down', function () {
+//         moveImage = pointer.touches({ x: image.x, y: image.y, width: image.image.width, height: image.image.height });
+//     });
+//     pointer.on('up', function () {
+//         moveImage = false;
+//     });  
+// }
+
 
 
 

@@ -11,7 +11,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 }
 
 .submitButton {
-    background-color:#a1b2d6de;
+    background-color:#c3c3c4de;
 	border-radius: 50px 50px 50px 50px;
     padding: 20px;
     width: 100;
@@ -40,3 +40,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     background-color: rgb(143, 141, 140);
 
   }
+
+  .title{
+    margin-bottom: 10px;
+    text-align:center;
+    width: 210px;
+    color:green;
+    border: solid black 2px;
+    }
+
+    input[type="button"]
+    {
+    background-color:rgb(143, 141, 140);
+    color: black;
+    border: solid black 2px;
+    width:100%
+    }
+
+    input[type="text"]
+    {
+    background-color:white;
+    border: solid black 2px;
+    width:100%
+    }
