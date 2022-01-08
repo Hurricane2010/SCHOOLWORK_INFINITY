@@ -2,6 +2,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
+.homecolor {
+  background: linear-gradient(to bottom, #0033cc 0%, #00ff99 100%);
+  text-align: center;
+}
+.hwcolor {
+  background: linear-gradient(to bottom, #0033cc 0%, #ff0000 100%);
+  text-align: center;
+}
+.inversehwcolor {
+  background: linear-gradient(to bottom, #ff0000 0%, #0033cc 100%);
+  text-align: center;
+}
+.projectcolor {
+    background: linear-gradient(to bottom, #0033cc 0%, #ff9933 100%);
+    text-align: center;
+}
+.inverseprojectcolor {
+  background: linear-gradient(to bottom, #ff9933 0%, #0033cc 100%);
+  text-align: center;
+}
 #subject_hw, #subject_project{    
 	border-radius: 50px 50px 50px 50px;
     border: 2px solid #E5E7E9;
