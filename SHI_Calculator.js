@@ -1,4 +1,3 @@
-//function that display value
 function dis(val)
 {
     document.getElementById("result").value+=val
@@ -17,3 +16,4 @@ function clr()
 {
     document.getElementById("result").value = ""
 }
+
