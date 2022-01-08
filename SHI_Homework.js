@@ -7,7 +7,8 @@ function onHomeworkSubmit() {
 //Calculator:
 function calculator() 
 {
-    document.getElementById("calcdisplay").style.display="block";
+    var div = document.getElementById("calcdisplay");
+    div.style.display = div.style.display == "none" ? "block" : "none";
 }
 
 //function that display value
