@@ -42,15 +42,30 @@
   <form action = "/action_page.php">
     <label for="subject_text" style="color: white;"><h3 class = "w3-margin">Enter the Subject of the Project: </h3></label>
     <input type="text" id="subject_project" name="subject"> <!--text box-->
-    <br></br>
+    <!--History-->
+    <div id = "history_div" style="display:none;">
+      <p>Slideshow or Poster (with oral presentation)</p>
+    </div>
     <!--Science-->
-    <div>
-
+    <div id = "science_div" style="display:none;">
+      <p>Essay or Slideshow (with oral presentation and provided research)</p>
+    </div>
+    <!--Math-->
+    <div id = "math_div" style="display:none;">
+      <p>Poster or Oral Presentation</p>
+    </div>
+    <!--Design-->
+    <div id = "design_div" style="display:none;">
+      <p>Image Slideshow or Model</p>
+    </div>
+    <!--Art-->
+    <div id = "art_div" style="display:none;">
+      <p>Artpeice and Discription, or Model and supporting text</p>
     </div>
     <br></br>
     <input type="submit" value="Submit" onclick="onSubjectSubmit()" class="submitButton"/> <!--sumbit subject of project button-->
   </form>
-  <h5 class = "w3-margin" id = "outputText"></h5>
+ 
   <h5 class = "w3-margin w3-left-align"><span id="outputText"></span></h5>
   </div>
 
