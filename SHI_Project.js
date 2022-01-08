@@ -1,26 +1,41 @@
-var socStu = "Slideshow or Poster (with oral presentation)";
-var science = "Essay or Slideshow (with oral presentation and provided research)";
-var math = "Poster or Oral Presentation";
-var design = "Image Slideshow or Model";
-var art = "Artpeice and Discription, or Model and supporting text";
 function onSubjectSubmit() {
     event.preventDefault();
     var subjectSubmitText = document.getElementById("subject_project").value;
     switch(subjectSubmitText.toLowerCase()){
         case "history":
-            document.getElementById("outputText").innerHTML = socStu;
+            document.getElementById("history_div").style.display="block";
+            document.getElementById("science_div").style.display="none";
+            document.getElementById("math_div").style.display="none";
+            document.getElementById("design_div").style.display="none";
+            document.getElementById("art_div").style.display="none";
             break;
         case "science":
-            document.getElementById("outputText").innerHTML = science;
+            document.getElementById("science_div").style.display="block";
+            document.getElementById("history_div").style.display="none";
+            document.getElementById("math_div").style.display="none";
+            document.getElementById("design_div").style.display="none";
+            document.getElementById("art_div").style.display="none";
             break;
         case "math":
-            document.getElementById("outputText").innerHTML = math;
+            document.getElementById("math_div").style.display="block";
+            document.getElementById("history_div").style.display="none";
+            document.getElementById("science_div").style.display="none";
+            document.getElementById("design_div").style.display="none";
+            document.getElementById("art_div").style.display="none";
             break;
         case "design":
-            document.getElementById("outputText").innerHTML = design;
+            document.getElementById("design_div").style.display="block";
+            document.getElementById("history_div").style.display="none";
+            document.getElementById("science_div").style.display="none";
+            document.getElementById("math_div").style.display="none";
+            document.getElementById("art_div").style.display="none";
             break;
         case "art":
-            document.getElementById("outputText").innerHTML = art;
+            document.getElementById("art_div").style.display="block";
+            document.getElementById("history_div").style.display="none";
+            document.getElementById("science_div").style.display="none";
+            document.getElementById("math_div").style.display="none";
+            document.getElementById("design_div").style.display="none";
             break;
     }
     //alert(subjectSubmitText);
