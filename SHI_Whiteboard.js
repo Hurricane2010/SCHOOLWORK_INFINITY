@@ -83,6 +83,19 @@ function pen(){
     width = width;
 }
 
+function colorWheel(e){
+    var canvas = document.getElementById('canvas'),
+    ctx = canvas.getContext("2d");
+    var theInput = document.getElementById("color");
+
+    theInput.addEventListener("input", function(){
+    var theColor = theInput.value;
+  
+    ctx.strokeStyle = theColor;
+    draw(e)
+    }, false);
+}
+
 // function selector(){
 //     var canvas = document.getElementById('canvas'),
 //         ctx = canvas.getContext("2d");
@@ -115,7 +128,5 @@ function pen(){
 //         moveImage = false;
 //     });  
 // }
-
-
 
 
