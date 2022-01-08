@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     const canvas = document.querySelector('#canvas');
     const ctx = canvas.getContext('2d');
-    width = 3
+    width = 3;
 
     //Resizing
     canvas.height = window.innerHeight;
@@ -46,9 +46,6 @@ window.addEventListener('resize', () =>{
 
     //Button Functions
 function lineWidthIncreaese(e){
-    if(eraser == true){
-        width = width - 10;
-    }
     console.log("Line is decreasing!")
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext("2d");
@@ -60,13 +57,7 @@ function lineWidthDecrease(e){
     console.log("Line is decreasing!")
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext("2d");
-    if(eraser == true){
-        width = width - 11;
-    }
-    else{
         width = width - 1;
-    }
-
     draw(e)
 }
 
@@ -76,12 +67,13 @@ function clearall(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
-function eraser(){
+function eraser(e){
+    eraser = width + 10;
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext("2d");
     ctx.strokeStyle = "#FDFEFE";
-    width = width + 10;
-    eraser = true;
+    ctx.strokeWidth = eraser;
+    draw(e);
 }
 
 function pen(){
