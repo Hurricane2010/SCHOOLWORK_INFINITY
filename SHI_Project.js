@@ -6,6 +6,23 @@ var art = "Artpeice and Discription, or Model and supporting text";
 function onSubjectSubmit() {
     event.preventDefault();
     var subjectSubmitText = document.getElementById("subject_project").value;
-    alert(subjectSubmitText);
+    switch(subjectSubmitText.toLowerCase()){
+        case "history":
+            document.getElementById("outputText").innerHTML = socStu;
+            break;
+        case "science":
+            document.getElementById("outputText").innerHTML = science;
+            break;
+        case "math":
+            document.getElementById("outputText").innerHTML = math;
+            break;
+        case "design":
+            document.getElementById("outputText").innerHTML = design;
+            break;
+        case "art":
+            document.getElementById("outputText").innerHTML = art;
+            break;
+    }
+    //alert(subjectSubmitText);
 }
 
