@@ -1,11 +1,9 @@
-<<<<<<< Updated upstream
-=======
 function calculator() 
 {
     document.getElementById("calcdisplay").style.display="block";
 }
+
 //function that display value
->>>>>>> Stashed changes
 function dis(val)
 {
     document.getElementById("result").value+=val
