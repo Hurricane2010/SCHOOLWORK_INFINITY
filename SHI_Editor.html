@@ -45,6 +45,17 @@
 		<a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span class="fa fa-list fa-fw"></span></a>
 		<a href="javascript:void(0)" onclick="setUrl()"><span class="fa fa-link fa-fw"></span></a>
 		<span><input id="txtFormatUrl" placeholder="url" class="form-control"></span>
+    <a href="javascript:void(0)" onclick="setSize()"><span class="fa fa-caret-square-o-up"></a></span></a>
+		<span><input id="txtSetSize" placeholder="size" type="text"></span>
+    <div class="dropdown">
+    <a href="javascript:void(0)" onclick="setFont()"><span class="fa fa-font"></span></a>
+    <button onclick="sizedropdown()" class="sizebtn">font</button>
+      <div id="sizeDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+          <a href="javascript:void(0)">Arial</a>
+          <a href="javascript:void(0)">Times New Roman</a>
+      </div>
+    </div>
 </div>
 
 <div class="editor" id="sampleeditor" style="height: 500px; color: white;">
