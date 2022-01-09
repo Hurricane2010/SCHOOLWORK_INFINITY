@@ -22,7 +22,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   background: linear-gradient(to bottom, #ff9933 0%, #0033cc 100%);
   text-align: center;
 }
-#subject_hw, #subject_project{    
+#subject_hw, #subject_project, #Project, #Homework{    
 	border-radius: 50px 50px 50px 50px;
     border: 2px solid #E5E7E9;
     padding: 20px; 
