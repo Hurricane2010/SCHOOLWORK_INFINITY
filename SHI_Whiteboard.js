@@ -23,8 +23,6 @@ window.addEventListener("load", () => {
         if(!painting) return;
         ctx.lineWidth = width;
         ctx.lineCap = 'round'
-        ctx.strokeStyle="#FDFEFE";
-
         ctx.lineTo(e.clientX, e.clientY);
         ctx.stroke();
         ctx.beginPath();
@@ -72,15 +70,15 @@ function eraser(e){
     eraser = width + 10;
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext("2d");
-    ctx.strokeStyle = "#212121";
     ctx.strokeWidth = eraser;
+    ctx.strokeStyle = "white";
     draw(e);
 }
 
 function pen(){
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext("2d");
-    ctx.strokeStyle = "#000000"
+    ctx.strokeStyle = theColor;
     width = width;
 }
 
@@ -90,7 +88,7 @@ function colorWheel(e){
     var theInput = document.getElementById("color");
 
     theInput.addEventListener("input", function(){
-    var theColor = theInput.value;
+    theColor = theInput.value;
   
     ctx.strokeStyle = theColor;
     draw(e)
