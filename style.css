@@ -84,3 +84,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     }
 
     
+.editor
+    {
+  border:solid 1px #ccc;
+  padding: 20px;
+  min-height:200px;
+    }
+
+    .sample-toolbar
+    {
+  border:solid 1px #ddd;
+  background:#f4f4f4;
+  padding: 5px;
+  border-radius:3px;
+    }
+
+    .sample-toolbar > span
+    {
+  cursor:pointer;
+}
+
+    .sample-toolbar > span:hover
+    {
+  text-decoration:underline;
+}
