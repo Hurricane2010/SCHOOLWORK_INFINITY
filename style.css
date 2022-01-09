@@ -3,11 +3,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
 .homecolor {
-  background: linear-gradient(to bottom, #0033cc 0%, #00ff99 100%);
+  background: linear-gradient(to bottom, #3262f3 0%, #245b5f 100%);
   text-align: center;
 }
 .hwcolor {
-  background: linear-gradient(to bottom, #0033cc 0%, #ff0000 100%);
+  background: linear-gradient(to bottom, #6137f7 0%, #8f4fd8 75%);
   text-align: center;
 }
 .inversehwcolor {
@@ -15,7 +15,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   text-align: center;
 }
 .projectcolor {
-    background: linear-gradient(to bottom, #0033cc 0%, #ff9933 100%);
+    background: linear-gradient(to bottom, #174d8bbd 0%, #58a0f1 100%);
     text-align: center;
 }
 .inverseprojectcolor {

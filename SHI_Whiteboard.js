@@ -23,6 +23,7 @@ window.addEventListener("load", () => {
         if(!painting) return;
         ctx.lineWidth = width;
         ctx.lineCap = 'round'
+        ctx.strokeStyle="#FDFEFE";
 
         ctx.lineTo(e.clientX, e.clientY);
         ctx.stroke();
@@ -71,7 +72,7 @@ function eraser(e){
     eraser = width + 10;
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext("2d");
-    ctx.strokeStyle = "#FDFEFE";
+    ctx.strokeStyle = "#212121";
     ctx.strokeWidth = eraser;
     draw(e);
 }
