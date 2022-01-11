@@ -39,21 +39,33 @@
 </div>
 
 <body style="margin-top: 50px; background-color: #212121;">
-	<div class="sample-toolbar" style="height: 60px">
+	<div class="sample-toolbar" style="height: 80px">
 		<a href="javascript:void(0)" onclick="format('bold')"><span class="fa fa-bold fa-fw"></span></a>
 		<a href="javascript:void(0)" onclick="format('italic')"><span class="fa fa-italic fa-fw"></span></a>
 		<a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span class="fa fa-list fa-fw"></span></a>
 		<a href="javascript:void(0)" onclick="setUrl()"><span class="fa fa-link fa-fw"></span></a>
+            <!-- <div class="dropdown">
+                <button class="dropbtn">Font Size</button>
+                <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+                    <a>2</a>
+                    <a>4</a>
+                    <a>6</a>
+                    <a>8</a>
+                    <a>10</a>
+                    <a>12</a>
+                </div>
+            </div> -->
 		<span><input id="txtFormatUrl" placeholder="url" class="form-control"></span>
     <a href="javascript:void(0)" onclick="setSize()"><span class="fa fa-caret-square-o-up"></a></span></a>
-		<span><input id="txtSetSize" placeholder="size" type="text"></span>
+		<span><input id="txtSetSize" placeholder="size" type="text" style="width: 150px;"></span>
     <div class="dropdown">
     <a href="javascript:void(0)" onclick="setFont()"><span class="fa fa-font"></span></a>
-    <button onclick="sizedropdown()" class="sizebtn">font</button>
+    <!-- <button onclick="sizedropdown()" class="sizebtn">font</button>
       <div id="sizeDropdown" class="dropdown-content">
         <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
           <a href="javascript:void(0)">Arial</a>
-          <a href="javascript:void(0)">Times New Roman</a>
+          <a href="javascript:void(0)">Times New Roman</a> -->
       </div>
     </div>
 </div>
