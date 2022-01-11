@@ -4,7 +4,6 @@
 <script scr="SHI_Whiteboard.js"></script>
 <script type="text/javascript" src="https://gustavgenberg.github.io/handy-front-end/Canvas.js"></script>
 <script type="text/javascript" src="https://gustavgenberg.github.io/handy-front-end/Pointer.js"></script>
-<script type="text/javascript" src="SHI_Whiteboard.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -36,13 +35,26 @@
 
 <!-- <body style="background-color: 212121#;"> -->
   <body>
+    <script type="text/javascript" src="SHI_Whiteboard.js" defer></script>
+
     <button type="submit" onclick="lineWidthIncreaese()" class="functionalButton" style="margin-left: 20px; margin-top: 75px; font-size: 30px;">↑</button>
     <button type="submit" onclick="lineWidthDecrease()" class="functionalButton" style="margin-left: 85px; margin-top: 75px; font-size: 30px;">↓</button>
     <button type="submit" onclick="clearall()" class="functionalButton" style="margin-left: 150px; margin-top: 75px; font-size: 15px; height: 9%;">Clear</button>
     <button type="submit" onclick="eraser()" class="functionalButton" style="margin-left: 235px; margin-top: 75px; font-size: 15px; height: 9%;">Erase</button>
     <button type="submit" onclick="pen()" class="functionalButton" style="margin-left: 320px; margin-top: 75px; font-size: 15px; height: 9%;">Pen</button>
     <button type="submit" onclick="selector()" class="functionalButton" style="margin-left: 395px; margin-top: 75px; font-size: 15px; height: 9%;">↸</button>
+    <button type="submit" onclick="Textbox()" id="textarea" class="functionalButton" style="margin-left: 445px; margin-top: 75px; font-size: 15px; height: 9%;">Text</button>
+    <!-- Draggable DIV -->
+    <div id="mydiv">
+      <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+      <div id="mydivheader">Click Header</div>
+      <textarea style="height: 100px"></textarea>
+    </div>
+
     <input type="color" onclick="colorWheel()" class="functionalButton" id="color" style="margin-left: 20px; margin-top: 150px; font-size: 15px; height: 9%;"></button>
-   
     <canvas id="canvas"></canvas>
-</body>
+
+
+    
+
+  </body>

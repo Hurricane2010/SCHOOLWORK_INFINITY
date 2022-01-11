@@ -108,3 +108,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     {
   text-decoration:underline;
 }
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#container {
+  position: relative;
+}
+#container canvas, #overlay {
+  position: absolute;
+}
