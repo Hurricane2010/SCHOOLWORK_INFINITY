@@ -97,10 +97,15 @@ function colorWheel(e){
 
 
 function Textbox(){
-    const div = document.getElementById("mydiv");
-    const clone = div.cloneNode(true);
-    clone.id="foo2";
-    document.body.append(clone);
+    const textbox = document.getElementById("mydiv")
+
+    if(textbox.style.visibility == "hidden"){
+        textbox.style.visibility = "visible";
+        counter = counter + 1;
+    }
+    if(textbox.style.visibility == "visible"){
+        textbox.style.visibility = "hidden";
+    }
 }
 
 
