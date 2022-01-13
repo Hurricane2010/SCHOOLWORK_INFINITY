@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <script type="text/javascript" src="SHI_Editor.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=EB+Garamond:wght@408&family=Island+Moments&family=Luxurious+Roman&family=Montserrat:wght@100&family=Moon+Dance&family=Noto+Sans&family=Playfair+Display:ital@1&family=The+Nautigal&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -45,6 +48,16 @@
 		<a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span class="fa fa-list fa-fw"></span></a>
 		<a href="javascript:void(0)" onclick="setUrl()"><span class="fa fa-link fa-fw"></span></a>
     <span><input id="txtFormatUrl" placeholder="url" class="form-control"></span>
+    <select name="fonts" id="fonts" onchange="fontChange(event)">
+      <option value='Luxurious Roman'>Luxurious Roman</option>
+      <option value='The Nautigal'>The Nautigal</option>
+      <option value='Montserrat'>Montserrat</option>
+      <option value='Island Moments'>Island Moments</option>
+      <option value='Moon Dance'>Moon Dance</option>
+      <option value='Noto Sans'>Noto Sans</option>
+      <option value='PlayFair Display'>Playfair Display</option>
+
+    </select>
 
             <!-- <div class="dropdown">
                 <button class="dropbtn">Font Size</button>
@@ -71,6 +84,6 @@
     </div>
 </div> -->
 
-<div class="editor" id="sampleeditor" style="height: 500px; color: white;">
+<div class="editor" id="sampleeditor" style="height: 500px; color: white; font-family: 'Times New Roman', Times, serif;">
 	</div>
 </body>

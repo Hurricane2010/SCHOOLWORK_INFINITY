@@ -1,7 +1,8 @@
 window.addEventListener('load', function(){
     document.getElementById('sampleeditor').setAttribute('contenteditable', 'true');
-    document.getElementById('sampleeditor2').setAttribute('contenteditable', 'true');
-});
+    
+    // document.getElementById('sampleeditor2').setAttribute('contenteditable', 'true');
+}, {passive: true});
 
 function format(command, value) {
     document.execCommand(command, false, value);
@@ -20,3 +21,11 @@ function setSize() {
     document.execCommand('insertHTML', false, '<p style="font-size:' + sizeNum + 'px">' + sText + '</p>');
     document.getElementById('txtSetSize').value = '';
 }
+
+function fontChange() {
+    var sel = document.getElementById("fonts");
+    var editor = document.getElementById("sampleeditor");
+    //alert(sel.options[sel.selectedIndex].text);
+    var font = sel.options[sel.selectedIndex].text;
+    editor.style.fontFamily = font;
+  }
