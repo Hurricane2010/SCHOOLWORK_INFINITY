@@ -42,13 +42,13 @@ function onSubjectSubmit() {
             document.getElementById("english_div").style.display="none";
             document.getElementById("programming_div").style.display="none";
             break;
-        case "programming"
-            document.getElementById("art_div").style.display="block";
+        case "programming":
+            document.getElementById("programming_div").style.display="block";
             document.getElementById("history_div").style.display="none";
             document.getElementById("science_div").style.display="none";
             document.getElementById("math_div").style.display="none";
             document.getElementById("english_div").style.display="none";
-            document.getElementById("programming_div").style.display="none";
+            document.getElementById("art_div").style.display="none";
     }
     //alert(subjectSubmitText);
 }
