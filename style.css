@@ -149,10 +149,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 #outervid_div {
   width: auto;
   height: auto;
-  background: red;
+  background: purple;
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  border: 3px solid black;
   padding: 10px;
   
 }
@@ -162,7 +162,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   background: #2185C5;
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  border: 3px solid white;
   padding: 10px;
   
 }
