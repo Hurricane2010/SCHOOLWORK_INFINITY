@@ -144,3 +144,33 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 #container canvas, #overlay {
   position: absolute;
 }
+
+/*Homework Pages*/
+#outervid_div {
+  width: auto;
+  height: auto;
+  background: red;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  
+}
+#vid_div {
+  width: 75%;
+  height: 75%;
+  background: #2185C5;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  
+}
+
+.vid {
+  display: flex;
+  width: 300px;
+  height: auto;
+  margin: 17px;
+  text-align: center;
+}
