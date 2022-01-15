@@ -19,7 +19,8 @@ function setSize() {
     var sizeNum = document.getElementById('txtSetSize').value;
     var sText = document.getSelection();
     document.execCommand('insertHTML', false, '<p style="font-size:' + sizeNum + 'px">' + sText + '</p>');
-    document.getElementById('txtSetSize').value = '';
+    var textsize = document.getElementById('txtSetSize')
+    textsize.value = '';
 }
 
 function fontChange() {
@@ -29,3 +30,12 @@ function fontChange() {
     var font = sel.options[sel.selectedIndex].text;
     editor.style.fontFamily = font;
   }
+
+function changeSize(){
+    var sel = document.getElementById("size");
+    var editor = document.getElementById("sampleeditor");
+    //alert(sel.options[sel.selectedIndex].text);
+    var sizeNum = sel.options[sel.selectedIndex].text;
+    var sText = document.getSelection();
+    document.execCommand('insertHTML', false, '<p style="font-size:' + sizeNum + 'px">' + sText + '</p>');
+}

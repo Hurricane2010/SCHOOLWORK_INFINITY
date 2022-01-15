@@ -1,5 +1,10 @@
+<script src="https://cdn.jsdelivr.net/npm/ef-infinite-canvas@0.5.0-alpha/dist/infinite-canvas.js"></script>
+
+
 window.addEventListener("load", () => {
-    const canvas = document.querySelector('#canvas');
+    const can = document.querySelector('#canvas');
+    var canvas = new InfiniteCanvas(canvasElement);
+
     const ctx = canvas.getContext('2d');
     width = 3;
 

@@ -30,6 +30,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     text-align: center;
 }
 
+#txtFormatUrl{    
+	border-radius: 25px 25px 25px 25px;
+    padding: 10px; 
+    width: 175px;
+    height: 1px;
+    text-align: center;
+}
+
+.dpn{
+  border-radius: 25px 25px 25px 25px;
+
+}
+
 .submitButton {
     background-color:#c3c3c4de;
 	  border-radius: 50px 50px 50px 50px;

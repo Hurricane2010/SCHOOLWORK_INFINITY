@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />  
 </head>
 
 <body>
@@ -48,7 +48,7 @@
 		<a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span class="fa fa-list fa-fw"></span></a>
 		<a href="javascript:void(0)" onclick="setUrl()"><span class="fa fa-link fa-fw"></span></a>
     <span><input id="txtFormatUrl" placeholder="url" class="form-control"></span>
-    <select name="fonts" id="fonts" onchange="fontChange(event)">
+    <select name="fonts" id="fonts" onchange="fontChange(event)" class="dpn">
       <option value='Luxurious Roman'>Luxurious Roman</option>
       <option value='The Nautigal'>The Nautigal</option>
       <option value='Montserrat'>Montserrat</option>
@@ -58,7 +58,18 @@
       <option value='PlayFair Display'>Playfair Display</option>
 
     </select>
+    <select name="size" id="size" onchange="changeSize(event)" class="dpn">
+      <option value='10'>10</option>
+      <option value='15'>15</option>
+      <option value='20'>20</option>
+      <option value='25'>25</option>
+      <option value='30'>30</option>
+      <option value='35'>35</option>
+      <option value='40'>40</option>
+      <option value='45'>45</option>
+      <option value='50'>50</option>
 
+    </select>
             <!-- <div class="dropdown">
                 <button class="dropbtn">Font Size</button>
                 <div id="myDropdown" class="dropdown-content">
