@@ -2,6 +2,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
+.logo {
+  position: absolute; 
+  top: 1px; 
+  right: 10px;
+}
 .homecolor {
   background: linear-gradient(to bottom, #3262f3 0%, #245b5f 100%);
   text-align: center;
