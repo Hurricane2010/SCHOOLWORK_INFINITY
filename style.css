@@ -161,7 +161,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   padding: 10px;
   
 }
-#vid_div {
+/* #vid_div {
   width: 75%;
   height: 75%;
   background: #2185C5;
@@ -170,9 +170,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   border: 3px solid white;
   padding: 10px;
   
-}
+} */
 
 .vid {
+  border-radius: 25px, 25px, 25px, 25px;
+  background-color: whitesmoke;
   display: flex;
   width: 300px;
   height: auto;
