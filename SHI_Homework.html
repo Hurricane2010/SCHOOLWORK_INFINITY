@@ -91,15 +91,33 @@
 
 <div class = "w3-container w3-center" style = "background-color: #8826f7; padding: 128px 16px">
   <h3 class = "w3-margin w3-center-align" style="color: white">Choose the <strong>Subject</strong> you need help on! </h3>
-  <form action = "/action_page.php">
     <!--<input type="text" id="subject_hw" name="subject"> <!--> <!--text box-->
     <div class="btn-group" style="width:100%">
-      <button style="width:16.33%">Math</button>
-      <button style="width:16.33%">Science</button>
-      <button style="width:16.33%">History</button>
-      <button style="width:16.33%">English</button>
-      <button style="width:16.33%">Programming</button>
-      <button style="width:16.33%">Art</button>
+      <button style="width:16.33%" onclick="mathButton()">Math</button>
+      <button style="width:16.33%" onclick="scienceButton()">Science</button>
+      <button style="width:16.33%" onclick="historyButton()">History</button>
+      <button style="width:16.33%" onclick="englishButton()">English</button>
+      <button style="width:16.33%" onclick="progButton()">Programming</button>
+      <button style="width:16.33%" onclick="artButton()">Art</button>
+    </div>
+    <br></br>
+    <div id="mathBtn" style="display:none;">
+      MATH VIDEO
+    </div>
+    <div id="sciBtn" style="display:none;">
+      SCIENCE VIDEO
+    </div>
+    <div id="histBtn" style="display:none;">
+      HISTORY VIDEO
+    </div>
+    <div id="engBtn" style="display:none;">
+      ENGLISH VIDEO
+    </div>
+    <div id="progBtn" style="display:none;">
+      PROGRAMMING VIDEO
+    </div>
+    <div id="artBtn" style="display:none;">
+      ART VIDEO
     </div>
     <br></br>
     <!--<input type="submit" value="Submit" onclick="onHomeworkSubmit()" class="submitButton"/>--><!--sumbit homework of project button-->
