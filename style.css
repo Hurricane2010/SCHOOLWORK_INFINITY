@@ -150,7 +150,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   position: absolute;
 }
 
-/*Homework Pages*/
+/*Homework Page*/
 #outervid_div {
   width: auto;
   height: auto;
@@ -182,3 +182,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   text-align: center;
 }
 
+.btn-group button {
+  background-color: rgb(236, 99, 45); /* Green background */
+  border: 1px solid white; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: cornflowerblue;
+  color: black;

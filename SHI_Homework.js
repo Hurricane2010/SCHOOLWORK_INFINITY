@@ -1,8 +1,8 @@
-function onHomeworkSubmit() {
+/*function onHomeworkSubmit() {
     event.preventDefault();
     var hwSubmitText = document.getElementById("subject_hw").value;
     alert(hwSubmitText);
-}
+}*/
 
 //Calculator:
 function calculator() 
