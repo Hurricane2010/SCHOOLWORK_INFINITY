@@ -27,12 +27,26 @@ window.addEventListener("load", () => {
         ctx.stroke();
         ctx.beginPath();
         ctx.moveTo(e.clientX, e.clientY);
+        if (e.touches) {
+            if (e.touches.length == 1) { // Only deal with one finger
+                var touch = e.touches[0]; // Get the information for finger #1
+                touchX=touch.pageX-touch.target.offsetLeft;
+                touchY=touch.pageY-touch.target.offsetTop;
+                ctx.lineTo(e.touchX, e.touchY);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(e.touchX, e.touchY);
+            }
+        }
     }
 
     //EventListeners
     canvas.addEventListener("mousedown", startPosition);
+    canvas.addEventListener("touchstart", startPosition);
     canvas.addEventListener("mouseup", finishedPosition);
+    canvas.addEventListener("touchend", finishedPosition);
     canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("touchmove", draw);
 
 
 });
