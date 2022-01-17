@@ -91,7 +91,6 @@
 
 <div class = "w3-container w3-center" style = "background-color: #8826f7; padding: 128px 16px">
   <h3 class = "w3-margin w3-center-align" style="color: white">Choose the <strong>Subject</strong> you need help on! </h3>
-    <!--<input type="text" id="subject_hw" name="subject"> <!--> <!--text box-->
     <div class="btn-group" style="width:100%">
       <button style="width:16.33%" onclick="mathButton()">Math</button>
       <button style="width:16.33%" onclick="scienceButton()">Science</button>
@@ -99,6 +98,11 @@
       <button style="width:16.33%" onclick="englishButton()">English</button>
       <button style="width:16.33%" onclick="progButton()">Programming</button>
       <button style="width:16.33%" onclick="artButton()">Art</button>
+    </div>
+    <br></br>
+    <div id = "keyword_textbox" style="display:none;">
+      <input type="text" id="keyword_text" name="hw_keyword" placeholder="Search Keywords">
+      <button id="keyword_Search" onclick="keywordSearch()">Search</button>
     </div>
     <br></br>
     <div id="mathBtn" style="display:none;">
