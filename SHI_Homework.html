@@ -89,9 +89,9 @@
 </div>
 
 
-<div class = "w3-container w3-center" style = "background-color: #8826f7; padding: 128px 16px">
+<div class = "w3-container w3-center" style = "background-color: #8826f7; padding: 128px 16px; overflow: hidden;">
   <h3 class = "w3-margin w3-center-align" style="color: white">Choose the <strong>Subject</strong> you need help on! </h3>
-    <div class="btn-group" style="width:100%">
+    <div class="btn-group" style="width:100%; overflow: hidden;">
       <button style="width:16.33%" onclick="mathButton()">Math</button>
       <button style="width:16.33%" onclick="scienceButton()">Science</button>
       <button style="width:16.33%" onclick="historyButton()">History</button>
@@ -100,14 +100,41 @@
       <button style="width:16.33%" onclick="artButton()">Art</button>
     </div>
     <br></br>
-    <div id = "keyword_textbox" style="display:none;">
+    <div id = "keyword_textbox" style="display:none; overflow: hidden;">
       <input type="text" id="keyword_text" name="hw_keyword" placeholder="Search Keywords">
+      <br></br>
+      <select name="math_courses" id="math_courses" class="dpn">
+        <option value='Luxurious Roman'>6th Grade</option>
+        <option value='The Nautigal'>7th Grade</option>
+        <option value='Montserrat'>8th Grade</option>
+        <option value='Island Moments'>9th Grade</option>
+        <option value='Moon Dance'>10th Grade</option>
+  
+      </select>
+      <br></br>
       <button id="keyword_Search" onclick="keywordSearch()">Search</button>
     </div>
     <br></br>
-    <div id="mathBtn" style="display:none;">
-      MATH VIDEO
+
+
+    <div id="mathBtn" style="display:none; overflow: hidden;">
+      <div class="images-container">
+
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+        <div class="card">9</div>
+        <div class="card">10</div>
+
+
     </div>
+
+
     <div id="sciBtn" style="display:none;">
       SCIENCE VIDEO
     </div>
@@ -126,7 +153,7 @@
     <br></br>
     <!--<input type="submit" value="Submit" onclick="onHomeworkSubmit()" class="submitButton"/>--><!--sumbit homework of project button-->
 
-    <div class="slider-wrap">
+    <!-- <div class="slider-wrap">
       <div class="slider">
         <div class="slider-item">
           <div class="Addition(Kindergarden).webm"></div>
@@ -153,7 +180,7 @@
     </div>
 
     <!--<input type="submit" value="Submit" onclick="onHomeworkSubmit()" class="submitButton"/> <!--> <!--sumbit homework of project button-->
-</div>
+</div> -->
 
 <div class = "w3-container w3-center" style = "background-color: #a175d3; padding: 128px 16px">
   <h3 class = "w3-margin w3-center-align" style = "color: white;">Enter the context of the homework:</h3>

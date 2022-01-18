@@ -27,15 +27,41 @@ window.addEventListener("load", () => {
         ctx.stroke();
         ctx.beginPath();
         ctx.moveTo(e.clientX, e.clientY);
+    }
+
+
+    var touchX,touchY;
+
+    function sketchpad_touchStart() {
+        getTouchPos();
+        drawDot(ctx,touchX,touchY,12);
+
+        // Prevents an additional mousedown event being triggered
+        event.preventDefault();
+    }
+
+    function sketchpad_touchMove(e) { 
+        getTouchPos(e);
+        if(!painting) return;
+        ctx.lineWidth = width;
+        ctx.lineCap = 'round'
+        ctx.lineTo(e.clientX, e.clientY);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(e.clientX, e.clientY);
+
+        drawDot(ctx,touchX,touchY,12); 
+        event.preventDefault();
+    }
+    function getTouchPos(e) {
+        if (!e)
+            var e = event;
+
         if (e.touches) {
-            if (e.touches.length == 1) { // Only deal with one finger
-                var touch = e.touches[0]; // Get the information for finger #1
+            if (e.touches.length == 1) {
+                var touch = e.touches[0];
                 touchX=touch.pageX-touch.target.offsetLeft;
                 touchY=touch.pageY-touch.target.offsetTop;
-                ctx.lineTo(e.touchX, e.touchY);
-                ctx.stroke();
-                ctx.beginPath();
-                ctx.moveTo(e.touchX, e.touchY);
             }
         }
     }

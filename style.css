@@ -27,7 +27,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   background: linear-gradient(to bottom, #ff9933 0%, #0033cc 100%);
   text-align: center;
 }
-#subject_hw, #subject_project, #Project, #Homework{    
+#subject_hw, #subject_project, #Project, #Homework, #keyword_text{    
 	border-radius: 50px 50px 50px 50px;
     border: 2px solid #E5E7E9;
     padding: 20px; 
@@ -206,4 +206,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .btn-group button:hover {
   background-color: cornflowerblue;
   color: black;
+}
+
+
+.images-container{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  overflow: auto;
+  position:relative;
+  overflow-x:scroll;
+}
+
+.card{
+  width: 350px;
+  height: 200px; 
+  font-size: 2.5em;
+  text-align: center;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-color: chocolate;
 }
