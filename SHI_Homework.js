@@ -35,7 +35,16 @@ function clr()
 function keywordSearch() {
     event.preventDefault();
     var hwSubmitText = document.getElementById("keyword_text").value;
-    alert(hwSubmitText);
+    cards = document.getElementById("images-container");
+    var counter = true;
+    if(counter == true){
+        cards.style.visibility = "visible";
+        counter = false;
+    }
+    if(counter == false){
+        cards.style.visiblity = "collapse";
+        counter = true;
+    }
 } 
 function mathButton() {
     document.getElementById("keyword_textbox").style.display="block";
