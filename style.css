@@ -219,8 +219,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 }
 
 .card{
+  padding: 20px;
   width: 350px;
-  height: 200px; 
+  height: 290px; 
   font-size: 2.5em;
   text-align: center;
   border: 2px solid black;

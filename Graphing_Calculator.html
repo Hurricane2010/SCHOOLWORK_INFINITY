@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Infonite - Blog</title>
+<meta charset="UTF-8">
+<script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="SHI_Chat.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=EB+Garamond:wght@408&family=Island+Moments&family=Luxurious+Roman&family=Montserrat:wght@100&family=Moon+Dance&family=Noto+Sans&family=Playfair+Display:ital@1&family=The+Nautigal&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet" type="text/css" />  
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="SHI_Homework.html" class="w3-bar-item w3-button w3-padding-large w3-white">Homework Help</a>
+    <a href="SHI_Project.html" class="w3-bar-item w3-button w3-padding-large w3-white">Project Medium</a>
+    <a href="SHI_Whiteboard.html" class="w3-bar-item w3-button w3-padding-large">Whiteboard</a>
+    <a href="SHI_Chat.html" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+    <a href="Graphing_Calculator.html" class="w3-bar-item w3-button w3-padding-large">Graphing Calculator</a>
+  </div>
+  <div class = "logo">
+    <img src="logo.png" alt="Infonite Logo" width="80" height="80">
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href = "index.html" class = "w3-bar-item w3-button w3-pading-large">Home</a>
+    <a href="SHI_Homework.html" class="w3-bar-item w3-button w3-padding-large">Homework Help</a>
+    <a href="SHI_Project.html" class="w3-bar-item w3-button w3-padding-large">Project Medium</a>
+    <a href="SHI_Whiteboard.html" class="w3-bar-item w3-button w3-padding-large">Whiteboard</a>
+    <a href="SHI_Chat.html" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+
+  </div>
+</div>
+
+<body>
+    <div id="calculator" style="width: 1375px; height: 615px;"></div>
+    <script>
+        var elt = document.getElementById('calculator');
+        var calculator = Desmos.GraphingCalculator(elt);
+      </script>
+</body>
