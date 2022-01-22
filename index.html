@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -48,6 +49,44 @@
   <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top" id="Homework" style="position: relative; right: 150px"><a href="SHI_Homework.html">Homework Help</a></button>
   <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top" id="Project" style="position: relative; left: 150px;"><a href="SHI_Project.html">Project Medium</a></button>
 </header>
+
+
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <p></p>
+
+    <div class="MessageInfo">1 / 3</div>
+    <div class="Info">First caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 3</div>
+    <p></p>
+    <div class="Info">Second Caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 3</div>
+    <p></p>
+    <div class="Info">Third Caption</div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div> 
+
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #7FB3D5;">
