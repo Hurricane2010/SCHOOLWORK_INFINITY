@@ -183,9 +183,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 }
 
 .btn-group button {
-  background-color: rgb(236, 99, 45); /* Green background */
-  border: 1px solid white; /* Green border */
-  color: white; /* White text */
+  background-color: ghostwhite; /* Green background */
+  border: 1px solid darkblue; /* Green border */
+  color: black; /* White text */
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */

@@ -102,46 +102,6 @@
       <button style="width:16.33%" onclick="artButton()">Art</button>
     </div>
     <br></br>
-    <div id = "keyword_textbox" style="display:none; overflow: hidden;">
-      <input type="text" id="keyword_text" name="hw_keyword" placeholder="Search Keywords">
-      <br></br>
-      <select name="math_courses" id="math_courses" class="dpn">
-        <option value='6th'>6th Grade</option>
-        <option value='7th'>7th Grade</option>
-        <option value='8th'>8th Grade</option>
-        <option value='9th'>9th Grade</option>
-        <option value='`0th'>10th Grade</option>
-  
-      </select>
-      <br></br>
-
-      <button id="keyword_Search" onclick="keywordSearch()" class="submitButton">Search</button>
-      <br></br>
-      <div class="images-container" id="images-container" style="visibility: collapse; overflow-x: scroll;">
-
-        <div class="card">
-          <video width="320" height="240" controls>
-            <source src="content/Algebra1.webm" type="video/mp4">
-          </video>
-        </div>
-        <div class="card">
-          <video width="320" height="240" controls>
-            <source src="content/Algebra2.webm" type="video/mp4">
-          </video>
-        </div>
-        <div class="card">3</div>
-        <div class="card">4</div>
-        <div class="card">5</div>
-        <div class="card">6</div>
-        <div class="card">7</div>
-        <div class="card">8</div>
-        <div class="card">9</div>
-        <div class="card">10</div>
-      </div>
-    </div>
-    <br></br>
-
-
     <div id="mathBtn" style="display:none;">
       <div class="btn-group" style="width:100%;">
         <button style="width:16.33%" onclick="algButton()">Algebra</button>
@@ -187,6 +147,49 @@
         <button style="width:16.33%" onclick="threeD_artButton()">3D</button>
       </div>
     </div>
+
+    <br></br>
+    
+    <div id = "keyword_textbox" style="display:none; overflow: hidden;">
+      <input type="text" id="keyword_text" name="hw_keyword" placeholder="Search Keywords">
+
+      <br></br>
+
+      <select name="math_courses" id="math_courses" class="dpn">
+        <option value='6th'>6th Grade</option>
+        <option value='7th'>7th Grade</option>
+        <option value='8th'>8th Grade</option>
+        <option value='9th'>9th Grade</option>
+        <option value='`0th'>10th Grade</option>
+      </select>
+
+      <br></br>
+
+      <button id="keyword_Search" onclick="keywordSearch()" class="submitButton">Search</button>
+      <br></br>
+      <div class="images-container" id="images-container" style="visibility: collapse; overflow-x: scroll;">
+
+        <div class="card">
+          <video width="320" height="240" controls>
+            <source src="content/Algebra1.webm" type="video/mp4">
+          </video>
+        </div>
+        <div class="card">
+          <video width="320" height="240" controls>
+            <source src="content/Algebra2.webm" type="video/mp4">
+          </video>
+        </div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+        <div class="card">9</div>
+        <div class="card">10</div>
+      </div>
+    </div>
+
     <br></br>
     <!--<input type="submit" value="Submit" onclick="onHomeworkSubmit()" class="submitButton"/>--><!--sumbit homework of project button-->
 
