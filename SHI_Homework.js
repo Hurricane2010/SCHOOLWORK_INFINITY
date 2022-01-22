@@ -35,16 +35,6 @@ function clr()
 function keywordSearch() {
     event.preventDefault();
     var hwSubmitText = document.getElementById("keyword_text").value;
-    cards = document.getElementById("images-container");
-    var counter = true;
-    if(counter == true){
-        cards.style.visibility = "visible";
-        counter = false;
-    }
-    if(counter == false){
-        cards.style.visiblity = "collapse";
-        counter = true;
-    }
 } 
 function mathButton() {
     document.getElementById("keyword_textbox").style.display="block";
@@ -99,5 +89,18 @@ function artButton() {
     document.getElementById("engBtn").style.display="none";
     document.getElementById("progBtn").style.display="none";
     document.getElementById("artBtn").style.display="block";
+}
+//Math Topics:
+function algButton() {
+    cards = document.getElementById("images-container");
+    var counter = true;
+    if(counter == true){
+        cards.style.visibility = "visible";
+        counter = false;
+    }
+    if(counter == false){
+        cards.style.visiblity = "collapse";
+        counter = true;
+    }
 }
 
