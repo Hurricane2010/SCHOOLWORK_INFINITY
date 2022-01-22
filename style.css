@@ -294,8 +294,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 /* The circles or bullets and indicators */
 .dots {
   cursor: pointer;
-  height: 16px;
-  width: 16px;
+  height: 8px;
+  width: 8px;
   margin: 0 3px;
   background-color: #acc;
   border-radius: 50%;
