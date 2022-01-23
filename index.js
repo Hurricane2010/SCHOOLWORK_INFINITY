@@ -11,6 +11,7 @@ function myFunction() {
 
 
 
+
 var slidePosition = 1;
 SlideShow(slidePosition);
 
@@ -39,3 +40,9 @@ function SlideShow(n) {
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
 } 
+
+
+
+function content(){
+  
+}
