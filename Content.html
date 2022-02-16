@@ -4,6 +4,7 @@
 <title>Infonite - Graphing Calculator</title>
 <meta charset="UTF-8">
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="Content.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,28 +46,31 @@
 
 <body>
 
-    <header class ="homecolor" style="padding:128px 16px">
+    <header class ="contentcolor" style="padding:128px 16px">
         <h1 class="w3-margin w3-jumbo" style="color: white">Content</h1>
-        <img src="logo.png" alt="Infonite Logo" width="220" height="225" style="position: absolute; left: 41.9%">
-        <br></br>
-        <br></br>
-      
-        <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top" id="Homework" style="position: relative; right: 150px"><a href="SHI_Homework.html">Homework Help</a></button>
-        <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top" id="Project" style="position: relative; left: 150px;"><a href="SHI_Project.html">Project Medium</a></button>
       </header>
-      <div style="width: 100%; height: 400px; background-color: rgb(216, 215, 215); margin-top: 5px; display: visible;">
-        <div id="content_Default" class = "content_Div">
-            <img src="GoogleBTN.png" alt="management files" width="700" height="350" style="width: 337px; height: 175px; border-radius:25px 25px 0px 0px; position: absolute; right: 992px; top: 612px;;">
+      <div id="content_access" style="width: 100%; height: 400px; margin-top: 15px; visibility: visible;">
+        <div id="content_Default_google" class = "content_Div">
+            <img src="GoogleBTN.png" alt="management files" width="700" height="350" style="width: 337px; height: 175px; border-radius:25px 25px 0px 0px; position: absolute; right: 992px; top: 450px;">
             <h1 style="margin-top: 140px; text-align: center">Google Tools Tutorials</h1>
+            <button type="button" class="submitButton" onclick="GoogleVideos()" style="margin-left: 65px; color: #626567;" id="GoogleVids">View -></button>
         </div>
-    
-        <div id="content_Default" class = "content_Div" style="position: absolute; left: 30%; top: 88.179%">
+        <div id="content_Default_apple" class = "content_Div" style="position: absolute; left: 30%; top: 62.179%">
             <img src="AppleBTN.png" alt="management files" width="700" height="350" style="width: 337px; height: 175px; border-radius:25px 25px 0px 0px; position: absolute; left: 0%; bottom: 56.2%">
             <h1 style="margin-top: 140px; text-align: center">Apple Teacher Tutorials</h1>
         </div>
 
     </div>
-  <div id="Google_Content" style="display: collapse">
+  <div id="Google_Content" style="visibility: collapse; margin-top: -500px;">
+    <video width="620" height="460" controls style="margin-left: 30px;">
+      <source src="content/Google_Drive_Courses/Drive1.webm" type="video/mp4">
+      <source src="content/Google_Drive_Courses/Drive2.webm" type="video/mp4" style="margin-left: 200px;">
+      <source src="content/Google_Drive_Courses/drive3.webm" type="video/mp4">
+      <source src="content/Google_Drive_Courses/Drive4.webm" type="video/mp4">
+      <source src="content/Google_Drive_Courses/drive5.webm" type="video/mp4">
+    </video>
+
+    
 
   </div>
 

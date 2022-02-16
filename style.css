@@ -23,6 +23,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     background: linear-gradient(to bottom, #174d8bbd 0%, #58a0f1 100%);
     text-align: center;
 }
+.contentcolor {
+  background: linear-gradient(to bottom, #66f3a8bd 0%, #58a0f1 100%);
+  text-align: center;
+}
 .inverseprojectcolor {
   background: linear-gradient(to bottom, #ff9933 0%, #0033cc 100%);
   text-align: center;
