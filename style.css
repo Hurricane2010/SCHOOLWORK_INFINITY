@@ -1,3 +1,14 @@
+[data-gjs-type="[data-gjs-type="[data-gjs-type="
+[data-gjs-type="[data-gjs-type="[data-gjs-type="
+[data-gjs-type="[data-gjs-type="[data-gjs-type="
+[data-gjs-type="[data-gjs-type="[data-gjs-type="
+[data-gjs-type="[data-gjs-type="[data-gjs-type="
+[data-gjs-type="[data-gjs-type="[data-gjs-
+type="wrapper"]"]"]"]"]"]"]"]"]"]"]"]"]"]"]"]"]"]{
+  background-color:#4f73c8;
+}
+
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
@@ -339,4 +350,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   height: 400px; 
   border-radius:25px 25px 25px 25px;
   background-color: rgb(241, 241, 241);
+}
+
+#Google_Content{
+  position:relative;
+  width:980px;
+  margin:0 auto;
+  right:30px;
+  left:-25px;
 }
