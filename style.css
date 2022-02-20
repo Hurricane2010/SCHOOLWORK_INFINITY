@@ -1,4 +1,4 @@
-[data-gjs-type="[data-gjs-type="[data-gjs-type="
+/* [data-gjs-type="[data-gjs-type="[data-gjs-type="
 [data-gjs-type="[data-gjs-type="[data-gjs-type="
 [data-gjs-type="[data-gjs-type="[data-gjs-type="
 [data-gjs-type="[data-gjs-type="[data-gjs-type="
@@ -6,7 +6,7 @@
 [data-gjs-type="[data-gjs-type="[data-gjs-
 type="wrapper"]"]"]"]"]"]"]"]"]"]"]"]"]"]"]"]"]"]{
   background-color:#4f73c8;
-}
+} */
 
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
@@ -254,6 +254,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   margin: auto;
 }
 
+.slideshow {
+  position: relative;
+  margin: auto;
+  width:"1900px";
+}
 /* Make the images invisible by default */
 .Containers {
   display: none;
