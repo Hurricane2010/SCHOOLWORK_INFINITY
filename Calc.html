@@ -49,37 +49,42 @@
 
   <header class ="calculatorColor" style="padding:100px 16px">
     <h1 class="w3-margin w3-jumbo" style="color: white">Calculators</h1><br><br>
-    Standard (Scientific) Calculator | Graphing Calculator | Geometry Calculator | Algebraic Calculator | Calculus Calculator
+    <h3 class="w3-margin" style="color: white">Standard (Scientific) Calculator | Graphing Calculator | Geometry Calculator | Algebraic Calculator | Calculus Calculator
+    </h1><br><br>
   </header>
-  <div style="margin-left: 0px; color: whitesmoke;background-color:darkgrey; position: relative; left: 100px;">
+  <div style="margin-left: 0px; color: whitesmoke;background-color:rgb(173, 173, 173); position: relative;">
     <h1>Standart Calculator</h1>
     The Standard Calculator has basic operations and calculations, including a scientific calculator, which will help you turn very big or small numbers into scientific form. <br>
-    <button onclick="standCalc()"> Standard Calculator </button> <br><br>
+    <button onclick="standCalc()" class="submitButton"> View </button> <br><br>
     <div id="sciCalc" style="display:none;">
-      <iframe src="https://www.meta-calculator.com/scientific-calculator.php?panel-201-calculator" width="760" height="300" style="resize:vertical;"></iframe>
+      <iframe src="https://www.meta-calculator.com/scientific-calculator.php?panel-201-calculator" width="760" height="500" style="resize:vertical;"></iframe>
   </div>
-  <div style="margin-left: 0px; color: whitesmoke;background-color:darkgrey; position: relative;">
+  <br></br>
+  <br></br>
+  <br></br>
+  <div style="margin-left: 0px; color: whitesmoke;background-color:rgb(151, 150, 150); position: relative;">
     <h1>Graphing Calculator</h1>
     The Graphing Calculator is a calculator you can use for plotting points, drawing graphs, and other graphing tools. All credit goes to Desmos for making this amazing calculator! <br>
-    <button onclick="graphCalc()"> Graphing Calculator </button> <br><br>
+    <button onclick="graphCalc()" class="submitButton">View</button> <br><br>
     <div id="graphDesmos" style="display:none;">
-      <iframe src="https://www.desmos.com/calculator" width="1000" height="600"></iframe>
+      <iframe src="https://www.desmos.com/calculator" width="760" height="500" style="resize:both;"></iframe>
   </div>
+  <br></br>
+  <br></br>
+  <br></br>
+  </div>
+  <div style="margin-left: 0px; color: whitesmoke;background-color:rgb(100, 99, 99); position: relative;">
+    <h1>Geometry Calculator</h1>
+    The Geometry Calculator is a calculator for finding the area, perimeter, and volume of different geometrical shapes. <br>
+    <button onclick="geoCalc()" class="submitButton">View</button> <br><br>
+    <div id="geoCalc" style="display:none;">
+      <iframe src="https://www.symbolab.com/geometry" width="760" height="500" style="resize:both;"></iframe>
   </div>
   
 
   <br><br>
 
   <!-- <div>
-    The Graphing Calculator is a calculator you can use for plotting points, drawing graphs, and other graphing tools. All credit goes to Desmos for making this amazing calculator! <br>
-    <button onclick="graphCalc()"> Graphing Calculator </button> <br><br>
-    <div id="graphDesmos" style="display:none;">
-      <iframe src="https://www.desmos.com/calculator" width="1000" height="600"></iframe>
-    </div>
-  </div>
-
-  <br><br>
-
   <div>
     The Geometry Calculator is a calculator for finding the area, perimeter, and volume of different geometrical shapes. <br>
     <button onclick="geoCalc()"> Geometry Calculator </button> <br><br>
