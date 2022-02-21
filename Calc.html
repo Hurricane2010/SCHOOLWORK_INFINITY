@@ -16,7 +16,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" />  
 </head>
 
-<body>
+<body style="text-align: center;">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -46,10 +46,29 @@
   </div>
 </div>
 
-<body>
-    <div id="calculator" style="width: 1375px; height: 615px;"></div>
-    <script>
-        var elt = document.getElementById('calculator');
-        var calculator = Desmos.GraphingCalculator(elt);
-    </script>
+  <header class ="calculatorColor" style="padding:100px 16px">
+    <h1 class="w3-margin w3-jumbo" style="color: black">Calculators</h1>
+    We have various calculators that you can use for different problems!<br><br>
+    Standard (Scientific) Calculator | Graphing Calculator | Geometry Calculator | Algebraic Calculator | Calculus Calculator
+  </header>
+
+  The Standard Calculator has basic operations and calculations, including a scientific calculator, which will help you turn very big or small numbers into scientific form. <br>
+  <button onclick="standCalc()"> Standard Calculator </button> <br>
+
+  
+
+  <br><br>
+
+  The Graphing Calculator is a calculator you can use for plotting points, drawing graphs, and other graphiing tools. All credit goes to Desmos for making this amazing calculator! <br>
+  <button onclick="graphCalc()"> Graphing Calculator </button> <br><br>
+
+  <iframe id="graphDesmos" style="display: none" src="https://www.desmos.com/calculator" width="600" height="600"></iframe>
+
+  <br><br>
+  Scientific Calculator: 
+
+  <br><br>
+
+  Graphing Calculator: 
+
 </body>

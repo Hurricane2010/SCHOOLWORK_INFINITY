@@ -26,20 +26,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   background: linear-gradient(to bottom, #6137f7 0%, #8f4fd8 75%);
   text-align: center;
 }
-.inversehwcolor {
-  background: linear-gradient(to bottom, #ff0000 0%, #0033cc 100%);
-  text-align: center;
-}
-.projectcolor {
-    background: linear-gradient(to bottom, #174d8bbd 0%, #58a0f1 100%);
-    text-align: center;
-}
 .contentcolor {
   background: linear-gradient(to bottom, #66f3a8bd 0%, #58a0f1 100%);
   text-align: center;
 }
-.inverseprojectcolor {
-  background: linear-gradient(to bottom, #ff9933 0%, #0033cc 100%);
+.calculatorColor {
+  background: linear-gradient(to bottom, red 0%, yellow 75%);
   text-align: center;
 }
 #subject_hw, #subject_project, #Project, #Homework, #keyword_text{    
