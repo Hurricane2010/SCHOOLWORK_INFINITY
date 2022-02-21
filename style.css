@@ -259,6 +259,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   margin: auto;
   width:"1900px";
 }
+
+.square {
+  height: 135px;
+  width: 135px;
+  background-color: rgb(167, 166, 166);
+}
+
 /* Make the images invisible by default */
 .Containers {
   display: none;
