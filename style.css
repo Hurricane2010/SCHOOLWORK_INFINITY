@@ -31,7 +31,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   text-align: center;
 }
 .calculatorColor {
-  background: linear-gradient(to bottom, red 0%, yellow 75%);
+  background: linear-gradient(to bottom, rgb(3, 131, 216) 0%, rgb(0, 255, 149) 75%);
   text-align: center;
 }
 #subject_hw, #subject_project, #Project, #Homework, #keyword_text{    

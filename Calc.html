@@ -48,22 +48,29 @@
 </div>
 
   <header class ="calculatorColor" style="padding:100px 16px">
-    <h1 class="w3-margin w3-jumbo" style="color: black">Calculators</h1>
-    We have various calculators that you can use for different problems!<br><br>
+    <h1 class="w3-margin w3-jumbo" style="color: white">Calculators</h1><br><br>
     Standard (Scientific) Calculator | Graphing Calculator | Geometry Calculator | Algebraic Calculator | Calculus Calculator
   </header>
-  <div>
+  <div style="margin-left: 0px; color: whitesmoke;background-color:darkgrey; position: relative; left: 100px;">
+    <h1>Standart Calculator</h1>
     The Standard Calculator has basic operations and calculations, including a scientific calculator, which will help you turn very big or small numbers into scientific form. <br>
     <button onclick="standCalc()"> Standard Calculator </button> <br><br>
     <div id="sciCalc" style="display:none;">
-      <iframe src="https://www.meta-calculator.com/scientific-calculator.php?panel-201-calculator" width="1000" height="600"></iframe>
-    </div>
+      <iframe src="https://www.meta-calculator.com/scientific-calculator.php?panel-201-calculator" width="760" height="300" style="resize:vertical;"></iframe>
+  </div>
+  <div style="margin-left: 0px; color: whitesmoke;background-color:darkgrey; position: relative;">
+    <h1>Graphing Calculator</h1>
+    The Graphing Calculator is a calculator you can use for plotting points, drawing graphs, and other graphing tools. All credit goes to Desmos for making this amazing calculator! <br>
+    <button onclick="graphCalc()"> Graphing Calculator </button> <br><br>
+    <div id="graphDesmos" style="display:none;">
+      <iframe src="https://www.desmos.com/calculator" width="1000" height="600"></iframe>
+  </div>
   </div>
   
 
   <br><br>
 
-  <div>
+  <!-- <div>
     The Graphing Calculator is a calculator you can use for plotting points, drawing graphs, and other graphing tools. All credit goes to Desmos for making this amazing calculator! <br>
     <button onclick="graphCalc()"> Graphing Calculator </button> <br><br>
     <div id="graphDesmos" style="display:none;">
@@ -99,8 +106,8 @@
             </div>
         </div>
       </div>
-    </div> <!--ending of "geoCalc" div-->
-  </div>
+    </div> <!--ending of "geoCalc" div
+  <!-- </div>
 
   <br><br>
 
