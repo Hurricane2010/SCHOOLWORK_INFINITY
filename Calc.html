@@ -3,7 +3,7 @@
 <head>
 <title>Infonite - Graphing Calculator</title>
 <meta charset="UTF-8">
-<script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+<script type="text/javascript" src="Calc.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="Calc.css" rel="stylesheet" type="text/css" /> 
 <link href="style.css" rel="stylesheet" type="text/css" />  
 </head>
 
@@ -51,27 +52,58 @@
     We have various calculators that you can use for different problems!<br><br>
     Standard (Scientific) Calculator | Graphing Calculator | Geometry Calculator | Algebraic Calculator | Calculus Calculator
   </header>
-
-  The Standard Calculator has basic operations and calculations, including a scientific calculator, which will help you turn very big or small numbers into scientific form. <br>
-  <button onclick="standCalc()"> Standard Calculator </button> <br>
-
+  <div>
+    The Standard Calculator has basic operations and calculations, including a scientific calculator, which will help you turn very big or small numbers into scientific form. <br>
+    <button onclick="standCalc()"> Standard Calculator </button> <br><br>
+    <div id="sciCalc" style="display:none;">
+      <iframe src="https://www.meta-calculator.com/scientific-calculator.php?panel-201-calculator" width="1000" height="600"></iframe>
+    </div>
+  </div>
   
 
   <br><br>
 
-  The Graphing Calculator is a calculator you can use for plotting points, drawing graphs, and other graphing tools. All credit goes to Desmos for making this amazing calculator! <br>
-  <button onclick="graphCalc()"> Graphing Calculator </button> <br><br>
-
-  <div id="graphDesmos" style="position:relative;">
-    HELLO
-    <iframe src="https://www.desmos.com/calculator" width="600" height="600"></iframe>
+  <div>
+    The Graphing Calculator is a calculator you can use for plotting points, drawing graphs, and other graphing tools. All credit goes to Desmos for making this amazing calculator! <br>
+    <button onclick="graphCalc()"> Graphing Calculator </button> <br><br>
+    <div id="graphDesmos" style="display:none;">
+      <iframe src="https://www.desmos.com/calculator" width="1000" height="600"></iframe>
+    </div>
   </div>
 
   <br><br>
-  Scientific Calculator: 
+
+  <div>
+    The Geometry Calculator is a calculator for finding the area, perimeter, and volume of different geometrical shapes. <br>
+    <button onclick="geoCalc()"> Geometry Calculator </button> <br><br>
+    <div id="geoCalc" style="display:none;">
+      <div class="menu-container">
+        <div class="button-container">
+            <div class="action-container">
+              <button><img src="https://i.pinimg.com/originals/fe/74/02/fe74026279d49724edba9a414bf48240.jpg" height="75"></button>
+            </div>
+            <div class="action-container">
+              <button><img src="https://i.pinimg.com/originals/3b/c2/04/3bc204d721ba4b4549f0c23d1b08c07c.jpg" height="75"></button>
+            </div>
+            <div class="action-container">
+              <button><img src="https://www.printableparadise.com/shapes/printable-triangle-shape.png" height="75"></button>
+            </div>
+            <div class="action-container">
+              <button><img src="https://www.printableparadise.com/shapes/printable-pentagon-shape.png" height="75"></button>
+            </div>
+            <div class="action-container">
+              <button><img src="https://i.pinimg.com/originals/a7/4e/29/a74e2972e642953a4034d031ef96af14.jpg" height="75"></button>
+            </div>
+            <div class="action-container">
+              <button><img src="https://www.printableparadise.com/shapes/hexagon-shape.png" height="75"></button>
+            </div>
+        </div>
+      </div>
+    </div> <!--ending of "geoCalc" div-->
+  </div>
 
   <br><br>
 
-  Graphing Calculator: 
+  Algebraic Calculator: 
 
 </body>
